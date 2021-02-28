@@ -1,0 +1,447 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    background: purple;
+  }
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    top: -10px;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+ul.menu {
+    position: relative;
+    right: 50px;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: green;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color:green;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: green;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    position: relative;
+    right: 60px;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color:crimson;
+}
+
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+.maxwidth{
+    height: 526px;
+    width: 100%;
+}
+.heas{
+    text-align: center;
+    height: 0;
+    position: relative;
+    top: 48px;
+    color: aliceblue;
+    font-weight: 600;
+    display: inline;
+    z-index: 12;
+}
+.btn{
+    height: 0px;
+    width: 80px;
+    position: relative;
+    bottom: 354px;
+    left: 500px;
+    padding: 6px 0px 20px;
+    border-radius: 23px;
+    border: none;
+    background: aquamarine;
+    color: ghostwhite;
+    outline: none;
+}
+.btn:hover{
+    background: crimson;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+    height: 1500px;
+  }
+  
+
+input[type="search"] {
+  position: relative;
+  top: -45px;
+  padding: 5px 13px;
+  text-align: center;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+ right: 110px;
+}
+input[type="text"] {
+    position: relative;
+    top: 30px;
+    padding: 9px 13px;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    right: 0px;
+    background-color: skyblue;
+  }
+  button.btn\.form-btn {
+    background: skyblue;
+    padding: 10px 72px;
+    position: relative;
+    top: 43px;
+    outline: none;
+    /* border: none; */
+}
+.popular{
+    padding: 4rem 0;
+
+}
+
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+/* .tags-flex-box{
+    background: skyblue;
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 1005;
+    height: 526px;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .gapss{
+    position: relative;
+    bottom: 200px;
+    border: none;
+  }
+  .blo{
+    display: grid;
+    grid-template-columns: 426px 315px 220px;
+    position: relative;
+    grid-auto-rows: max-content;
+    top: 100px;
+    height: 392px;
+  }
+  img{
+    height: 200px;
+    position: relative;
+    position: relative;
+    height: 222px;
+  }
+  .img1{
+    position: relative;
+    left: 32px;
+    top: 0px;
+    height: 300px;
+    width: 395px;
+    text-align: center;
+    background: aqua;
+    letter-spacing: 1px;
+}
+.img2{
+    position: relative;
+    left: 32px;
+    top: 0px;
+    height: 300px;
+    width: 395px;
+    text-align: center;
+    background: aqua;
+    letter-spacing: 1px;
+}
+.img3{
+    position: relative;
+    left: 145px;
+    top: 0px;
+    height: 300px;
+    width: 395px;
+    text-align: center;
+    background: aqua;
+    letter-spacing: 1px;
+}
+.img:hover{
+    transform: scale(1.3);
+    transition: all 1s ease;
+}
+.site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.post-img {
+    height: 283px;
+    position: relative;
+    top: 78px;
+    left: 50px;
+}
+aside.sidebar {
+    position: relative;
+    top: 100px;
+}
+.likned {
+    position: relative;
+    top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: gray;
+}
+.post-content{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.site-content.post-content> .post-img, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+
+}
+.site-content.post-content> .post-img.img{
+    width: 100%;
+
+}
+.site-content.post-content>.post-img.img:hover{
+    transform: scale(1.3);
+    transition: all 1s ease;
+}
+.post-content.post-title .likned{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+.site-content.post-content.post-title.post-btn{
+    border-radius: 0;
+    padding: 7rem 1.5rem;
+    background: skyblue;
+}
+
+button.btn.post-btn {
+        height: 28px;
+        position: relative;
+        top: 14px;
+        text-align: center;
+        left: 5px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 70px;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: goldenrod;
+    }
+
+    .site-content> .sidebar.catagory-list{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .site-content> .sidebar.catagory-list.list-item{
+        background: skyblue;
+        padding: .4rem 1rem;
+        margin: .8rem 0;
+        border-radius: 3rem;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-item{
+        background: skyblue;
+        padding: .4rem 1rem;
+        margin: .8rem 0;
+        border-radius: 3rem;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    span.tag1 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+    }
+    span.tag2 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+    }
+    span.tag3 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+    }
+    span.tag4 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+        position: relative;
+        top: 3px;
+    }
+    span.tag5 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+        position: relative;
+        top: 3px;
+    }
+    span.tag6 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+        position: relative;
+        top: 13px;
+    }
+    span.tag7 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+        position: relative;
+        top: 13px;
+    }
+    span.tag8 {
+        background: skyblue;
+        border-radius: 13px;
+        padding: 4px 5px;
+        margin: 3px 5px;
+        position: relative;
+        top: 16px;
+    }
+    .sidebar{
+        display: grid;
+        grid-template-columns: 400px;
+    }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+  footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
